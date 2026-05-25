@@ -47,4 +47,8 @@ div {
   .search-box > div:not(:last-child)::after {
     background: none !important;
   }
+
+  #location {
+    text-align: center;
+  }
 }
