@@ -6,7 +6,7 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <div className="nav-container" style={{boxShadow: isMenuOpen ? 'none' : '0 10px 30px rgba(0, 0, 0, 0.06)'}}>
+            <div className="nav-container">
                 <h2 className="nav-logo">BookMyBriks</h2>
                 <div className="nav-menu-container">
                     <ul className="nav-menu">
@@ -28,7 +28,7 @@ function Navbar() {
                 <i className={`fa-solid ${isMenuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
                 </button>
 
-                <div className="mobile-menu" style={{ top: isMenuOpen ? '64px' : '-100%' }}>
+                <div className="mobile-menu" style={{ top: isMenuOpen ? '64px' : '-9999px' }}>
                     <ul className="nav-menu mobile-nav-menu">
                         <li className="nav-item">
                             <a href="/" className="nav-link">Home</a>

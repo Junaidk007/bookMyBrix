@@ -2,7 +2,12 @@
 
 .navbar {
     width: 100%;
+    top: 0;
     z-index: 9999;
+    position: absolute;
+    background: rgb(255 255 255 / 48%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     /* padding: 18px 0; */
 }
 
@@ -12,8 +17,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    padding: 20px 35px;
+    /* background: white; */
+    padding: 20px 60px 15px 60px;
     transition: 1s ease;
     /* box-shadow:
         0 10px 30px rgba(0,0,0,0.06); */
@@ -31,7 +36,8 @@
     margin: 0;
 }
 
-.nav-menu, .nav-menu-container{
+.nav-menu,
+.nav-menu-container {
     display: flex;
 
     gap: 40px;
@@ -53,24 +59,24 @@
     transition: 0.7s ease;
     /* z-index: -999; */
     backdrop-filter: blur(10px);
-     background: rgba(255, 255, 255, 0.8);
-     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-menu .nav-menu {
     flex-direction: column;
     gap: 20px;
     padding-bottom: 20px;
-   
+
 }
 
 .mobile-menu-toggle i {
-  transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 
 .mobile-menu-toggle.open i {
-  transform: rotate(180deg);
-  opacity: 0.8;
+    transform: rotate(180deg);
+    opacity: 0.8;
 }
 
 .nav-link {
@@ -106,7 +112,7 @@
     font-size: 0.75rem !important;
 }
 
-.login-cta button{
+.login-cta button {
     background: #000;
 
     color: white;
@@ -129,7 +135,7 @@
         background 0.25s ease;
 
     box-shadow:
-        0 10px 20px rgba(0,0,0,0.15);
+        0 10px 20px rgba(0, 0, 0, 0.15);
 
     position: relative;
 
@@ -139,40 +145,37 @@
 
 /* Hover Animation */
 
-.login-cta button:hover{
+.login-cta button:hover {
 
     transform:
-        translateY(-3px)
-        scale(1.03);
+        translateY(-3px) scale(1.03);
 
     box-shadow:
-        0 16px 35px rgba(0,0,0,0.22);
+        0 16px 35px rgba(0, 0, 0, 0.22);
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #111,
-            #000
-        );
+            #000);
 }
 
 
 /* Click Animation */
 
-.login-cta button:active{
+.login-cta button:active {
 
     transform:
         scale(0.96);
 
     box-shadow:
-        0 6px 12px rgba(0,0,0,0.12);
+        0 6px 12px rgba(0, 0, 0, 0.12);
 
 }
 
 
 /* Optional Shine Effect */
 
-.login-cta button::before{
+.login-cta button::before {
 
     content: "";
 
@@ -187,25 +190,23 @@
     height: 100%;
 
     background:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             transparent,
-            rgba(255,255,255,0.18),
-            transparent
-        );
+            rgba(255, 255, 255, 0.18),
+            transparent);
 
     transition: 0.6s;
 
 }
 
 
-.login-cta button:hover::before{
+.login-cta button:hover::before {
 
     left: 120%;
 
 }
 
-.mobile-menu-toggle{
+.mobile-menu-toggle {
     display: none;
 }
 
@@ -231,7 +232,7 @@
         font-size: 0.9rem;
     } */
 
-    .mobile-menu-toggle{
+    .mobile-menu-toggle {
         display: block;
 
         font-size: 1.5rem;

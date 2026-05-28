@@ -2,7 +2,7 @@
     /* width: 100%; */
     z-index: -9999;
     height: 550px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: clamp(0px, 4vw, 5rem);
     margin-right: clamp(0px, 4vw, 5rem);
     background-image: url('/hero.png');

@@ -5,10 +5,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 button,
 a,
 div {
   -webkit-tap-highlight-color: transparent;
+}
+
+.appLayout {
+  height: 100dvh;
+  overflow-y: scroll;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.listingBox .listings-container + .listings-container {
+  margin: 2rem 3rem;
 }
 
 @media (max-width: 767px) {
