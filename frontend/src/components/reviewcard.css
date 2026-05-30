@@ -1,0 +1,140 @@
+/* Review Card Container */
+.review-card {
+  background: #ffffff;
+  width: clamp(18rem, 40vw, 35rem);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Hover Effects */
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border-color: rgba(30, 58, 138, 0.15); /* Sleek primary-color-themed border tint */
+}
+
+/* User Info Layout */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+/* User Profile Picture */
+.user-pfp {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8); /* Vibrant, premium blue gradient */
+  border: 2px solid #f3f4f6;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.review-card:hover .user-pfp {
+  transform: scale(1.06);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* User Name Details */
+.userName {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName h4 {
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.userName p {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0.15rem 0 0 0;
+  line-height: 1.2;
+}
+
+/* Review Content Box */
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* Rating Section */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Material UI Rating customizations */
+.rating .MuiRating-root {
+  color: #f59e0b; /* Premium Amber color */
+}
+
+.rating .MuiRating-iconEmpty {
+  color: #e2e8f0; /* Soft gray for empty stars */
+} 
+
+/* Time Indicator */
+.rating span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #9ca3af;
+  letter-spacing: 0.02em;
+}
+
+/* Review Description Text */
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Responsiveness */
+@media (max-width: 640px) {
+  .review-card {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+  
+  .user-info {
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+  
+  .user-pfp {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .userName h4 {
+    font-size: 0.9rem;
+  }
+  
+  .userName p {
+    font-size: 0.75rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
