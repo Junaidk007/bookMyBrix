@@ -29,6 +29,7 @@ div {
 @media (max-width: 767px) {
   .hero-container {
     height: calc(550px - 63.2px) !important;
+
     /* margin: 0 !important;
     border-radius: 0 !important; */
   }
@@ -65,5 +66,25 @@ div {
 
   #location {
     text-align: center;
+  }
+
+  .review-box {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    overflow-x: scroll;
+    width: 100%;
+    margin: 3rem 0 0 0 !important;
+  }
+
+  .review-box>div {
+    flex: 0 0 100%;
+  }
+
+  .listing-container {
+    padding: 0 !important;
+  }
+
+  .listings-container {
+    margin: 1rem 0  !important;
   }
 }

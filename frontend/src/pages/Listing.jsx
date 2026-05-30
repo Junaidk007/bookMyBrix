@@ -1,7 +1,22 @@
 import ImageBox from '../components/ImageBox';
+import ListDescription from '../components/ListDescription';
+import UserCard from '../components/UserCard';
+import ReviewCard from '../components/ReviewCard';
 import './listing.css'
+import { useRef, useState } from 'react';
+import dayjs from "dayjs";
 
 function Listing() {
+
+    const [checkInDate, setCheckIn] = useState('Add date')
+    const [checkOutDate, setCheckOut] = useState('Add date')
+
+    let checkIn = useRef(null)
+    let checkOut = useRef(null)
+
+    let price = 2000
+    let nights = dayjs(checkOutDate).diff(checkInDate, 'day')
+
     return (
         <div className="listing-container">
             <div className="title-box">
@@ -10,47 +25,26 @@ function Listing() {
             <ImageBox/>
             <div className="info-box">
                 <div className="info-container">
-                    <div className="host-info">
-                        <div className="host-pfp"></div>
-                        <div className="hostName">
-                            <h4>Hosted by Ritesh</h4>
-                            <p>Superhost3 months hosting</p>
-                        </div>
-                    </div>
-                    <div className="listing-description">
-                        <p>
-                            Welcome to a bright, comfortable space located in the heart of Rajajipuram, Lucknow
-                            This property is designed to give you a relaxed and stylish experience. Perfect for short getaways or business travelers looking for convenience.
-
-                            Highlights:
-
-                            Spacious room with natural light
-
-                            Modern interiors & comfy bedding
-
-                            Close to markets, cafes & transport
-
-                            Safe, quiet neighborhood
-                        </p>
-                    </div>
+                    <UserCard/>
+                    <ListDescription/>
                 </div>
                 <div className="price-box">
                     <div>
-                        <h3 className="price">₹24,100</h3>
-                        <p>for 8 nights</p>
+                        <h3 className="price">₹{price * (nights > 0 ? nights : 1)}</h3>
+                        <p>for {nights > 0 ? nights : 1} {nights > 1 ? 'nights' : 'night'}</p>
                     </div>
                     <div className="calender">
                         <div className="date-container">
-                            <div className="checkIN">
-                                <input type="date" name="" id="" />
+                            <div className="checkIN" onClick={() => { checkIn.current?.showPicker() }}>
+                                <input ref={checkIn} onChange={() => { setCheckIn(checkIn.current?.value) }} type="date" min={new Date().toISOString().split('T')[0]}/>
                                 <h3>Check In</h3>
-                                <p>7/1/2026</p>
-                            </div>
+                                <p>{checkInDate}</p>
+                            </div>  
                             <div className="line"></div>
-                            <div className="checkOut">
+                            <div className="checkOut" onClick={() => { checkOut.current?.showPicker() }}>
                                 <h3>Check Out</h3>
-                                <p>7/1/2026</p>
-                                <input type="date" name="" id="" />
+                                <p>{checkOutDate}</p>
+                                <input ref={checkOut} onChange={() => { setCheckOut(checkOut.current?.value) }} type="date" min={checkInDate}/>
                             </div>
                         </div>
                         <div className="reservation-btn-box">
@@ -63,10 +57,17 @@ function Listing() {
                 </div>
             </div>
             <div className="review-box">
-
+                <ReviewCard/>
+                <ReviewCard/>
+                <ReviewCard/>
+                <ReviewCard/>
+                <ReviewCard/>
+                <ReviewCard/>
             </div>
             <div className="location-box">
-
+                <div className="map">
+                    <h1>Map will be here</h1>
+                </div>
             </div>
 
         </div>

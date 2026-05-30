@@ -1,0 +1,20 @@
+/* DESCRIPTION */
+
+.listing-description {
+  margin-top: 2rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.main-description {
+    padding-bottom: 1rem;
+}
+
+.highlights h3 {
+    padding-bottom: 1rem;
+}
+
+.highlights li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}

@@ -37,41 +37,6 @@
   flex: 1;
 }
 
-/* HOST */
-
-.host-info {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1.8rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.host-pfp {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #1e3a8a, #0f172a);
-}
-
-.hostName h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #111827;
-}
-
-.hostName p {
-  color: #6b7280;
-  margin-top: 0.3rem;
-}
-
-/* DESCRIPTION */
-
-.listing-description {
-  margin-top: 2rem;
-  color: #374151;
-  line-height: 1.8;
-}
 
 /* PRICE CARD */
 
@@ -190,8 +155,14 @@
 
 .review-box,
 .location-box {
-  margin-top: 4rem;
-  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 3rem 2rem 0 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 /* RESPONSIVE */
