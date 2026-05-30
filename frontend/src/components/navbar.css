@@ -50,9 +50,9 @@
 }
 
 .mobile-menu {
-    position: absolute;
+    /* position: absolute; */
     /* top: 64px; */
-    left: 0;
+    /* left: 0; */
     width: 100%;
     /* background: yellow; */
     padding: 20px;
