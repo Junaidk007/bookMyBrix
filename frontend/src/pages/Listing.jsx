@@ -1,7 +1,7 @@
-import ImageBox from '../components/ImageBox';
-import ListDescription from '../components/ListDescription';
-import UserCard from '../components/UserCard';
-import ReviewCard from '../components/ReviewCard';
+import ImageBox from '../components/ListingPage/ImageBox';
+import ListDescription from '../components/ListingPage/ListDescription';
+import UserCard from '../components/ListingPage/UserCard';
+import ReviewCard from '../components/ListingPage/ReviewCard';
 import './listing.css'
 import { useRef, useState } from 'react';
 import dayjs from "dayjs";

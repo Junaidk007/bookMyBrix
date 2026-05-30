@@ -1,0 +1,32 @@
+.listings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 3rem;
+    font-size: 1.25rem;
+}
+
+.cards-container {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    padding: 1rem 2rem 2rem 2rem;
+    /* flex-direction: column; */
+    gap: 3rem;
+    overflow-y: scroll;
+}
+
+.listings-container h2 {
+    padding-top: 1rem;
+}
+
+.listingBox .listings-container + .listings-container {
+  margin: 2rem 3rem;
+}
+
+@media (max-width: 767px) {
+  .listings-container {
+    margin: 1rem 0 !important;
+  }
+}

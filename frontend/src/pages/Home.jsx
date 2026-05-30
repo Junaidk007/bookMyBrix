@@ -1,5 +1,6 @@
-import Hero from "../components/Hero";
-import ShowListing from "../components/ShowListing";
+import Hero from "../components/HomePage/Hero";
+import ShowListing from "../components/HomePage/ShowListing";
+
 
 function Home() {
     return (
