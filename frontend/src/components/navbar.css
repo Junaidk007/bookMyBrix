@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    /* background: white; */
     padding: 20px 35px;
     transition: 1s ease;
     /* box-shadow:
