@@ -2,9 +2,6 @@
 
 .navbar {
     width: 100%;
-<<<<<<< Updated upstream
-    z-index: 9999;
-=======
     max-height: 85px;
     overflow: hidden;
     top: 0;
@@ -16,7 +13,6 @@
     /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
     transition: max-height 0.7s ease;
 
->>>>>>> Stashed changes
     /* padding: 18px 0; */
 }
 
@@ -71,15 +67,9 @@
     padding: 20px;
     transition: 0.7s ease;
     /* z-index: -999; */
-<<<<<<< Updated upstream
-    backdrop-filter: blur(10px);
-     background: rgba(255, 255, 255, 0.8);
-     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-=======
     /* backdrop-filter: blur(10px); */
     /* background: rgba(255, 255, 255, 0.8); */
     /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
->>>>>>> Stashed changes
 }
 
 .mobile-menu .nav-menu {
