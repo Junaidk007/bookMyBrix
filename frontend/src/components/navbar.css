@@ -10,10 +10,7 @@
     background: rgb(255 255 255 / 60%);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
     transition: max-height 0.7s ease;
-
-    /* padding: 18px 0; */
 }
 
 .navbar.active {
