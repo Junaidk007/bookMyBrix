@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <div className='appLayout'>
-        <Home />
+        {/* <Home /> */}
         <Listing/>
         <Footer />
       </div>
