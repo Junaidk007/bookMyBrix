@@ -1,0 +1,219 @@
+.listing-container {
+  width: 92%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding-left: clamp(1rem, 5vw, 5rem);
+  padding-right: clamp(1rem, 5vw, 5rem);
+  font-family: "Inter", sans-serif;
+}
+
+/* TITLE */
+
+.title-box {
+  margin-bottom: 1.5rem;
+}
+
+.title-box h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+
+/* INFO SECTION */
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 0 3rem;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+
+.info-container {
+  flex: 1;
+}
+
+/* HOST */
+
+.host-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.host-pfp {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+}
+
+.hostName h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.hostName p {
+  color: #6b7280;
+  margin-top: 0.3rem;
+}
+
+/* DESCRIPTION */
+
+.listing-description {
+  margin-top: 2rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* PRICE CARD */
+
+.price-box {
+  width: 380px;
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 2rem;
+}
+
+.price-box>div:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.price-box p {
+  color: #6b7280;
+}
+
+/* CALENDER */
+
+.calender {
+  overflow: hidden;
+}
+
+/* CHECK IN OUT */
+
+.date-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin: 0 1rem 1rem 1rem; */
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.line {
+  width: 2px;
+  background: #e5e7eb;
+}
+
+.checkIN,
+.checkOut {
+  position: relative;
+  padding: 1rem;
+}
+
+/* .checkIN {
+  border-bottom: 1px solid #e5e7eb;
+} */
+
+.checkIN h3,
+.checkOut h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  color: #111827;
+}
+
+.checkIN p,
+.checkOut p {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* HIDE INPUT */
+
+.checkIN input,
+.checkOut input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* BUTTON */
+
+.reservation-btn-box {
+  padding-top: 1rem;
+}
+
+.rev-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.rev-btn:hover {
+  transform: translateY(-2px);
+}
+
+.not-charged {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* EMPTY SECTIONS */
+
+.review-box,
+.location-box {
+  margin-top: 4rem;
+  min-height: 250px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .info-box {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .price-box {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-box h1 {
+    font-size: 1.7rem;
+  }
+
+  .price-box {
+    padding: 1.2rem;
+  }
+}
