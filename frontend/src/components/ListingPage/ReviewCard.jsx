@@ -2,32 +2,36 @@ import UserCard from "./UserCard";
 import Rating from "@mui/material/Rating";
 import "./reviewcard.css";
 
-function ReviewCard({
-    ratingValue = 5,
-    timeAgo = "1 week ago",
-    reviewText = "The place was clean, bright, and had everything we needed. The host was super helpful and made sure we had a great stay!"
-}) {
+// {
+//     ratingValue = 5,
+//     timeAgo = "1 week ago",
+//     reviewText = "The place was clean, bright, and had everything we needed. The host was super helpful and made sure we had a great stay!"
+// }
+
+function ReviewCard({review}) {
     return (
         <div className="review-card">
             <div className="user-info">
-                <div className="user-pfp"></div>
+                <div className="user-pfp">
+                    <img src={review.author.pfp} alt="" />
+                </div>
                 <div className="userName">
-                    <h4>Ritesh</h4>
-                    <p>3 months ago</p>
+                    <h4>{review.author.username}</h4>
+                    <p>{review.author.timestamp} on bookMyBrix</p>
                 </div>
             </div>
             <div className="review">
                 <div className="rating">
                     <Rating
                         name="review-rating"
-                        value={ratingValue}
+                        value={review.ratingValue}
                         readOnly
                         precision={0.5}
                         size="small"
                     />
-                    <span>{timeAgo}</span>
+                    <span>{review.timeAgo}</span>
                 </div>
-                <p className="review-text">{reviewText}</p>
+                <p className="review-text">{review.reviewText}</p>
             </div>
         </div>
     );

@@ -1,5 +1,7 @@
 import Hero from "../components/HomePage/Hero";
+import SearchBtn from "../components/HomePage/SearchBtn";
 import ShowListing from "../components/HomePage/ShowListing";
+import listData  from './data'
 
 
 function Home() {
@@ -7,9 +9,10 @@ function Home() {
         <>
             <Hero />
             <div className="listingBox">
-                <ShowListing title={'Popular Hotels'} />
-                <ShowListing title={'Available this weekend'} />
+                <ShowListing title={'Popular Hotels'} listData={listData} />
+                <ShowListing title={'Available this weekend'} listData={listData}/>
             </div>
+            
         </>
     );
 }

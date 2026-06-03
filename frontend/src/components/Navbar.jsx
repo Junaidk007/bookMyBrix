@@ -1,5 +1,6 @@
 import './navbar.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,9 @@ function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a href="/contact" className="nav-link">Contact</a>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/add-listing" className="nav-link">Add Listing</Link>
                             </li>
                         </ul>
                         <div className="login-cta">
@@ -40,6 +44,9 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <a href="/contact" className="nav-link">Contact</a>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/add-listing" className="nav-link">Add Listing</Link>
                         </li>
                     </ul>
                     <div className="login-cta mobile-login-cta">

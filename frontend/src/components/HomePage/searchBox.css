@@ -14,14 +14,14 @@
 
     backdrop-filter: blur(5px);
     box-shadow:
-        0 6px 20px rgba(0,0,0,0.08),
-        0 2px 6px rgba(0,0,0,0.04);
+        0 6px 20px rgba(0, 0, 0, 0.08),
+        0 2px 6px rgba(0, 0, 0, 0.04);
 
     overflow: hidden;
 }
 
 /* Each section */
-.search-box > div {
+.search-box>div {
     flex: 1;
     padding: 12px 28px;
 
@@ -33,7 +33,7 @@
 }
 
 /* Vertical divider */
-.search-box > div:not(:last-child)::after {
+.search-box>div:not(:last-child)::after {
     content: "";
     position: absolute;
 
@@ -50,7 +50,7 @@
 
 /* Labels */
 .search-box label,
-.search-box > div > div:first-child {
+.search-box>div>div:first-child {
     font-size: 14px;
     font-weight: 600;
 
@@ -61,8 +61,8 @@
 
 /* Inputs */
 .search-box input {
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
 
     background: transparent;
 
@@ -75,7 +75,7 @@
 }
 
 /* Add dates text */
-.addDate{
+.addDate {
     color: #999;
     font-size: 14px;
 }
@@ -117,27 +117,35 @@
     transform: scale(0.95);
 }
 
-#check-in, #check-out {
+#check-in,
+#check-out {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
 @media (max-width: 767px) {
-  .search-box {
-    flex-direction: column;
-    transform: translateY(85px) !important;
-  }
+    .search-box {
+        flex-direction: column;
+        transform: translateY(70px) !important;
+    }
 
-  .search-box > div {
-    text-align: center;
-  }
+    .search-box>div {
+        text-align: center;
+    }
 
-  .search-box > div:not(:last-child)::after {
-    background: none !important;
-  }
+    .search-box>div:not(:last-child)::after {
+        background: none !important;
+    }
 
-  #location {
-    text-align: center;
-  }
-}
+    #location {
+        text-align: center;
+    }
+
+    .position {
+        position: absolute !important;
+        top: 0;
+        right: 20px;
+        transform: translateY(89vh);
+    }
+}

@@ -11,7 +11,7 @@ function SearchBox() {
     let checkOut = useRef(null)
 
     return (
-        <div className="search-box">
+        <div className='search-box'>
             <div>
                 <label htmlFor="location">Location</label>
                 <input type="text" id="location" placeholder='Where are you going?' />

@@ -156,13 +156,17 @@
 .review-box,
 .location-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  /* gap: 1rem; */
   margin: 3rem 2rem 0 2rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
   border-top: 1px solid #e5e7eb;
+}
+
+.location-box {
+  justify-content: center;
 }
 
 /* RESPONSIVE */
@@ -189,7 +193,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 790px) {
   .review-box {
     flex-wrap: nowrap !important;
     justify-content: flex-start !important;
@@ -205,4 +209,4 @@
   .listing-container {
     padding: 0 !important;
   }
-}
+}

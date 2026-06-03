@@ -15,9 +15,25 @@ div {
   -webkit-tap-highlight-color: transparent;
 }
 
+Link,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .appLayout {
   height: 100dvh;
   overflow-y: scroll;
   position: relative;
   padding-top: 5rem;
-}
+}
+
+@media (max-width: 767px) {
+  .listingBox {
+    margin-top: 11rem;
+  }
+}

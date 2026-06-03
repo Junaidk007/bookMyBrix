@@ -9,7 +9,7 @@ function Hero() {
                 <p>Book home and stay packages at unbeatable prices</p>
             </div>
             <div className="search-container">
-                <SearchBox/>
+                <SearchBox />
             </div>
 
         </div>

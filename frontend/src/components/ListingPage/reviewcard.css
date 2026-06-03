@@ -1,7 +1,7 @@
 /* Review Card Container */
 .review-card {
   background: #ffffff;
-  width: clamp(18rem, 40vw, 35rem);
+  width: clamp(18rem, 36vw, 35rem);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 1.8rem;
@@ -32,13 +32,21 @@
 .user-pfp {
   width: 44px;
   height: 44px;
+  overflow: hidden;
   border-radius: 50%;
   background: linear-gradient(135deg, #3b82f6, #1d4ed8); /* Vibrant, premium blue gradient */
   border: 2px solid #f3f4f6;
   flex-shrink: 0;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  justify-content: center;
 }
+
+/* .user-pfp > img {
+  width: 44px;
+  height: 44px;  
+} */
 
 .review-card:hover .user-pfp {
   transform: scale(1.06);
