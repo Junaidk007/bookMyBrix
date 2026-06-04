@@ -1,7 +1,7 @@
 .hero-container {
     /* width: 100%; */
     z-index: -9999;
-    height: 550px;
+    height: 85vh;
     margin-top: 1rem;
     margin-left: clamp(0px, 4vw, 5rem);
     margin-right: clamp(0px, 4vw, 5rem);
@@ -17,7 +17,7 @@
 .shadow {
     width: clamp(274px, 41vw, 480px);
     height: 100%;
-    background-color: rgba(45, 79, 74, 0.55);
+    background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.35));
     border-radius: 1.5rem 0 0 1.5rem;
     display: flex;
     flex-direction: column;
@@ -27,14 +27,16 @@
 
 .shadow h1 {
     color: white;
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-size: clamp(3rem, 7vw, 5.5rem);
     margin: 0 2rem 2rem 2rem;
     font-family: "Forum", serif;
+    font-weight: 400;
 }
 
 .shadow p {
     color: white;
-    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+    font-size: 1.1rem;
+    max-width: 650px;
     margin: 0 2rem;
     font-weight: 500;
 }

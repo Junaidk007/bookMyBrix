@@ -10,18 +10,18 @@
     align-items: center;
     justify-content: center;
     padding: 48px 24px;
-    border: 2px dashed #D2E3FC;
+    border: 2px dashed var(--accent);
     border-radius: 16px;
-    background-color: #FFFFFF;
+    background-color: var(--bg-card);
     cursor: pointer;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
 .upload-container:hover {
-    border-color: #3B82F6;
-    background-color: #F8FAFC;
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.04);
+    border-color: var(--primary);
+    background-color: var(--bg-primary);
+    box-shadow: 0 6px 20px rgba(62, 91, 86, 0.04);
 }
 
 .upload-icon-wrapper {
@@ -30,53 +30,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
-    border: 1.5px solid #E2E8F0;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-card) 100%);
+    border: 1.5px solid var(--border);
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.05);
+    box-shadow: 0 4px 12px rgba(62, 91, 86, 0.05);
     margin-bottom: 20px;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .upload-icon {
     font-size: 28px;
-    color: #3B82F6;
+    color: var(--primary);
     transition: all 0.25s ease;
 }
 
 .upload-container:hover .upload-icon-wrapper {
     transform: translateY(-4px);
-    border-color: #BFDBFE;
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 6px 16px rgba(62, 91, 86, 0.1);
 }
 
 .upload-container:hover .upload-icon {
-    color: #1D4ED8;
+    color: var(--primary-hover);
     transform: scale(1.05);
 }
 
 .upload-text {
     font-size: 16px;
     font-weight: 500;
-    color: #334155;
+    color: var(--text-primary);
     margin-bottom: 6px;
     text-align: center;
 }
 
 .browse-text {
-    color: #2563EB;
+    color: var(--primary);
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 .upload-container:hover .browse-text {
-    color: #1D4ED8;
+    color: var(--primary-hover);
     text-decoration: underline;
 }
 
 .upload-subtext {
     font-size: 12px;
-    color: #94A3B8;
+    color: var(--text-secondary);
     text-align: center;
 }
 
@@ -99,9 +99,9 @@
     gap: 16px;
     padding: 12px 16px;
     margin-top: 16px;
-    border: 1px solid #E2E8F0;
+    border: 1px solid var(--border);
     border-radius: 12px;
-    background-color: #FFFFFF;
+    background-color: var(--bg-card);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
     transition: all 0.2s ease;
     box-sizing: border-box;
@@ -109,7 +109,7 @@
 }
 
 .fileInfo:hover {
-    border-color: #CBD5E1;
+    border-color: var(--primary);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
@@ -119,8 +119,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EFF6FF;
-    color: #2563EB;
+    background-color: var(--bg-primary);
+    color: var(--primary);
     border-radius: 8px;
     font-size: 18px;
     flex-shrink: 0;
@@ -136,7 +136,7 @@
 .fileMeta h3 {
     font-size: 14px;
     font-weight: 600;
-    color: #1E293B;
+    color: var(--text-primary);
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -145,7 +145,7 @@
 
 .fileMeta p {
     font-size: 12px;
-    color: #64748B;
+    color: var(--text-secondary);
     margin: 2px 0 0 0;
 }
 
@@ -156,14 +156,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #94A3B8;
+    color: var(--text-secondary);
     cursor: pointer;
     transition: all 0.2s ease;
     flex-shrink: 0;
 }
 
 .circleCross:hover {
-    background-color: #F1F5F9;
+    background-color: var(--border);
     color: #EF4444;
 }
 

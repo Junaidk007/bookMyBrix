@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --bg-primary: #F8F5F0;
+  --primary: #3E5B56;
+  --primary-hover: #2D4F4A;
+
+  --accent: #C8A97E;
+  --accent-light: #E7D3AF;
+
+  --bg-primary: #FAF8F5;
   --bg-card: #FFFFFF;
 
-  --text-primary: #1A1A1A;
+  --text-primary: #161616;
   --text-secondary: #6B7280;
 
-  --primary: #2D4F4A;
-  --primary-hover: #1E3532;
+  --border: #ECE8E1;
 
-  --accent: #D4B483;
-
-  --border: #E5E7EB;
+  --shadow:
+    0 10px 30px rgba(0,0,0,.06);
 }
 
 * {
@@ -26,7 +30,9 @@
 .nav-logo,
 .hero-title,
 .listing-title,
-.page-title {
+.page-title,
+.title-box h1,
+.card-title {
   font-family: "Forum", serif;
 }
 

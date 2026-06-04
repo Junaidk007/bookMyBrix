@@ -1,14 +1,13 @@
 /* Review Card Container */
 .review-card {
-  background: var(--bg-card);
+  background: #ffffff;
   width: clamp(18rem, 36vw, 35rem);
-  border: 1px solid var(--border);
+  border: none;
   border-radius: 20px;
   padding: 1.8rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  box-shadow: var(--shadow);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
-              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   margin-bottom: 1.5rem;
   box-sizing: border-box;
 }
@@ -17,7 +16,6 @@
 .review-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-  border-color: var(--primary);
 }
 
 /* User Info Layout */
@@ -34,7 +32,7 @@
   height: 44px;
   overflow: hidden;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2D4F4A, #D4B483);
+  background: linear-gradient(135deg, #3E5B56, #C8A97E);
   border: 2px solid #f3f4f6;
   flex-shrink: 0;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),

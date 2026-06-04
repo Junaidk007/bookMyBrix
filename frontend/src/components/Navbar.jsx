@@ -47,7 +47,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="login-cta mobile-login-cta">
-                        <button>Get Started</button>
+                        <Link to="/add-listing" className="nav-link"><button>Add Listing</button></Link>
                     </div>
                 </div>
 

@@ -9,7 +9,7 @@
     z-index: 9999;
     position: fixed;
     background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     transition: max-height 0.7s ease;
 }
@@ -39,6 +39,7 @@
     color: var(--text-primary);
     cursor: pointer;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 .nav-logo a{
@@ -46,6 +47,7 @@
     font-family: "Forum", serif;
     color: var(--text-primary);
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .nav-menu, .nav-menu-container{
