@@ -3,7 +3,7 @@
 .image-box {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 280px 280px;
+  grid-template-rows: 225px 225px;
   gap: 0.7rem;
   border-radius: 20px;
   overflow: hidden;

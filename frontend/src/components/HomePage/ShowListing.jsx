@@ -10,7 +10,7 @@ function ShowListing({ title, listData }) {
             <h2>{title}</h2>
             <div className="cards-container">
                 {listData.map((list, idx) => (
-                    <Link to={`/listing/${idx}`}>
+                    <Link key={idx} to={`/listing/${idx}`}>
                         <ListingCard
                             id={idx}
                             key={idx}

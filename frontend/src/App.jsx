@@ -5,12 +5,14 @@ import Listing from './pages/Listing'
 import Footer from './components/Footer'
 import AddListing from './pages/AddListing'
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./util/ScrollToTop";
 
 function App() {
 
   return (
     <>
       <Navbar />
+        <ScrollToTop />
       <div className='appLayout'>
         <Routes>
           <Route path="/" element={<Home />} />
