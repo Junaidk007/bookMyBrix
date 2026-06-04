@@ -21,6 +21,9 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link to="/contact" className="nav-link">Contact</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/signup" className="nav-link">SignUp</Link>
+                            </li>
                         </ul>
                         <div className="login-cta">
                             <Link to="/add-listing" className="nav-link"><button>Add Listing</button></Link>
@@ -41,6 +44,9 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <a href="/contact" className="nav-link">Contact</a>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/signup" className="nav-link">SignUp</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/add-listing" className="nav-link">Add Listing</Link>
