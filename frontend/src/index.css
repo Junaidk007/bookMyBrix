@@ -1,9 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-primary: #F8F5F0;
+  --bg-card: #FFFFFF;
+
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+
+  --primary: #2D4F4A;
+  --primary-hover: #1E3532;
+
+  --accent: #D4B483;
+
+  --border: #E5E7EB;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
+}
+
+.nav-logo,
+.hero-title,
+.listing-title,
+.page-title {
+  font-family: "Forum", serif;
+}
+
+body,
+.appLayout {
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 *::-webkit-scrollbar {

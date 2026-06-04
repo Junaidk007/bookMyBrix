@@ -4,7 +4,6 @@
   margin: 2rem auto;
   padding-left: clamp(1rem, 5vw, 5rem);
   padding-right: clamp(1rem, 5vw, 5rem);
-  font-family: "Inter", sans-serif;
 }
 
 /* TITLE */
@@ -16,7 +15,7 @@
 .title-box h1 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--text-primary);
 }
 
 
@@ -60,11 +59,11 @@
 .price {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--primary);
 }
 
 .price-box p {
-  color: #6b7280;
+  color: var(--text-secondary);
 }
 
 /* CALENDER */
@@ -81,12 +80,12 @@
   /* margin: 0 1rem 1rem 1rem; */
   border-radius: 1rem;
   text-align: center;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
 }
 
 .line {
   width: 2px;
-  background: #e5e7eb;
+  background: var(--border);
 }
 
 .checkIN,
@@ -104,13 +103,13 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
-  color: #111827;
+  color: var(--text-primary);
 }
 
 .checkIN p,
 .checkOut p {
   font-weight: 500;
-  color: #374151;
+  color: var(--text-primary);
 }
 
 /* HIDE INPUT */
@@ -134,7 +133,7 @@
   padding: 1rem;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  background: var(--primary);
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -143,6 +142,7 @@
 }
 
 .rev-btn:hover {
+  background: var(--primary-hover);
   transform: translateY(-2px);
 }
 
@@ -162,7 +162,7 @@
   margin: 3rem 2rem 0 2rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border);
 }
 
 .location-box {

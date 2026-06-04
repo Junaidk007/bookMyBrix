@@ -5,7 +5,7 @@
     margin-top: 1rem;
     margin-left: clamp(0px, 4vw, 5rem);
     margin-right: clamp(0px, 4vw, 5rem);
-    background-image: url('/hero.png');
+    background-image: url('/heroImage.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -17,7 +17,7 @@
 .shadow {
     width: clamp(274px, 41vw, 480px);
     height: 100%;
-    background-color: rgba(18, 23, 55, 0.627);
+    background-color: rgba(45, 79, 74, 0.55);
     border-radius: 1.5rem 0 0 1.5rem;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@
     color: white;
     font-size: clamp(1rem, 4vw, 3rem);
     margin: 0 2rem 2rem 2rem;
+    font-family: "Forum", serif;
 }
 
 .shadow p {
@@ -58,4 +59,4 @@
   .shadow p {
     font-size: 1.5rem !important;
   }
-}
+}

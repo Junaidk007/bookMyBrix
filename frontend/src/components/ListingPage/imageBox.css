@@ -66,6 +66,6 @@
   }
 
   .img-container::scroll-marker:target-current {
-    background-color: #184ecc;
+    background-color: var(--primary);
   }
 }  

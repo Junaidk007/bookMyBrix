@@ -2,7 +2,7 @@
 
 .listing-description {
   margin-top: 2rem;
-  color: #374151;
+  color: var(--text-primary);
   line-height: 1.8;
 }
 
