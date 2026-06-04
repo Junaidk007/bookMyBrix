@@ -48,9 +48,6 @@ function Navbar() {
                         <li className="nav-item">
                             <Link to="/signup" className="nav-link">SignUp</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/add-listing" className="nav-link">Add Listing</Link>
-                        </li>
                     </ul>
                     <div className="login-cta mobile-login-cta">
                         <Link to="/add-listing" className="nav-link"><button>Add Listing</button></Link>
